@@ -1,0 +1,18 @@
+#{param name=mapURL/}
+#{param name=galleries/}
+
+<fieldset>
+	<legend> Select file</legend>
+<form enctype="multipart/form-data" method="post" action="${mapURL}">
+	<input type="file" name ="photoName"/>
+	<input type="submit" name="Upload File"/>
+</form>
+</fieldset>
+<fieldset style="border-coler:#DDDDDD">
+	<legend>Gallery</legend>
+	<div id="gallery" style="float:left;color:#CCCCCC; width:400px;">
+		<% galleries.each() { gallery -> %>
+		<div style="width:100px; height:100px;float: left;padding: 4px; "><img style="width:100px; height:100px;float left;" src="${gallery}"/></div>
+		<% } %>
+	</div>
+</fieldset>
