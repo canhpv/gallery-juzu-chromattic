@@ -28,10 +28,10 @@ import javax.jcr.Session;
 import java.lang.reflect.Method;
 
 /**
- * Integrates Chromattic with the GateIn JCR server. 
- *
- * @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a>
- * @version $Revision$
+ * Created by The eXo Platform SAS
+ * Author : Canh Pham Van
+ *          canhpv@exoplatform.com
+ * Oct 5, 2012  
  */
 public class CurrentRepositoryLifeCycle implements SessionLifeCycle
 {

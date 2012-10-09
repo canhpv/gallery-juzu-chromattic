@@ -27,55 +27,29 @@ import org.chromattic.api.annotations.PrimaryType;
 import org.chromattic.api.annotations.Property;
 
 import java.util.Date;
-
 /**
- * Models an <code>nt:hierarchyNode</code> node.
- *
- * @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a>
- * @version $Revision$
+ * Created by The eXo Platform SAS
+ * Author : Canh Pham Van
+ *          canhpv@exoplatform.com
+ * Oct 5, 2012  
  */
 @PrimaryType(name = "nt:hierarchyNode")
 public abstract class File 
 {
 
-   /**
-    * Returns the file id.
-    *
-    * @return the file id
-    */
+
    @Id
    public abstract String getId();
 
-   /**
-    * Returns the file path.
-    *
-    * @return the file path
-    */
    @Path
    public abstract String getPath();
 
-   /**
-    * Returns the file name.
-    *
-    * @return the file name
-    */
    @Name
    public abstract String getName();
 
-   /**
-    * Returns the directory containing this file.
-    *
-    * @return the parent directory
-    */
 
    @ManyToOne
    public abstract Directory getParent();
-
-   /**
-    * Returns the creation date of this file.
-    *
-    * @return the creation date
-    */
 
    @Property(name = "jcr:created")
    public abstract Date getCreated();

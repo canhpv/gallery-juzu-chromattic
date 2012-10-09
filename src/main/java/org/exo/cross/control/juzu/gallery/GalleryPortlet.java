@@ -70,7 +70,6 @@ public class GalleryPortlet extends Controller{
   /** . */
   private String workspaceName;
   
-  private PortletConfig conf;
   
   @View
   public void index() throws PortletException{

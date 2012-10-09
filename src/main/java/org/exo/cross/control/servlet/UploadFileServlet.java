@@ -97,8 +97,7 @@ public class UploadFileServlet extends HttpServlet{
           }
        }
       
-    } catch (FileUploadException e) {
-      // TODO Auto-generated catch block
+    } catch (FileUploadException e) {     
       e.printStackTrace();
     }
     StringBuffer buf = new StringBuffer();
